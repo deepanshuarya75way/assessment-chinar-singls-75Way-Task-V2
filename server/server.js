@@ -91,6 +91,7 @@ app.use('/api/teachers', require('./routes/teachers'));
 app.use('/api/demos', require('./routes/demos'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/notifications', require('./routes/notifications'));
+app.use('/api/reviews', require('./routes/review'));
 
 // ── Health check ─────────────────────────────────────────────
 app.get('/api/health', (req, res) => res.json({

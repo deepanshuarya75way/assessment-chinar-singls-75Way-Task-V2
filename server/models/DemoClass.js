@@ -9,7 +9,10 @@ const demoClassSchema = new mongoose.Schema({
   parentName: { type: String },
   parentEmail: { type: String },
   parentMobile: { type: String },
-
+  attendanceConfirmed: {
+    type: Boolean,
+    default: false,  
+  },
   subject: { type: String },
   class: { type: String },
   mode: { type: String },
